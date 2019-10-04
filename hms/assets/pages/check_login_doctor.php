@@ -8,7 +8,7 @@
     if(mysqli_num_rows($res) == 1)
     {
         $row = mysqli_fetch_assoc($res);
-        $_SESSION['pat_id'] = $row['pat_id'];
+        $_SESSION['doc_id'] = $row['pat_doc_id'];
         header("Location:doctor_info_page.php");
     }
     else
